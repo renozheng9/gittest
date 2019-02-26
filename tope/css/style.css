@@ -77,10 +77,12 @@ a:hover, a:active, a:focus {
   padding-top: 60px;
   padding-bottom: 80px;
 }
-.main-about,
-.main-single-post,
-.main-gallery,
-.main-contact {
+.main-1,
+.main-2,
+.main-3,
+.main-4,
+.main-5,
+.main-6 {
   height: 65vh;
 }
 .overlay {
@@ -237,24 +239,32 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  background: url('../images/home-bg.jpg') no-repeat;
+  background: url('../images/bg-lz.jpg') no-repeat;
   height: 100vh;
 }
 
-.main-about {
-  background: url('../images/about-bg.jpg') no-repeat;
+.main-1 {
+  background: url('../images/1.jpg') no-repeat;
 }
 
-.main-single-post {
-  background: url('../images/single-post-bg.jpg') no-repeat;
+.main-2 {
+  background: url('../images/3.jpg') no-repeat;
 }
 
-.main-gallery {
-  background: url('../images/gallery-bg.jpg') no-repeat;
+.main-3 {
+  background: url('../images/6.jpg') no-repeat;
 }
 
-.main-contact {
-  background: url('../images/contact-bg.jpg') no-repeat;
+.main-4 {
+  background: url('../images/8.jpg') no-repeat;
+}
+
+.main-5 {
+  background: url('../images/14.jpg') no-repeat;
+}
+
+.main-6 {
+  background: url('../images/18.jpg') no-repeat;
 }
 
 #particles-js {
@@ -689,10 +699,12 @@ footer .footer-copyright {
 
 @media (max-width: 980px) {
 
-  .main-about,
-  .main-single-post,  
-  .main-gallery,
-  .main-contact {
+  .main-1,
+  .main-2,  
+  .main-3,
+  .main-4,
+  .main-5,
+  .main-6 {
     height: 35vh;
   }
 

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>卢宅</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/tiltedpage-scroll.css">
+<link rel="stylesheet" href="./css/animate.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet"> -->
+<style>
+.item {
+  box-shadow: 0px 0px 50px 0px rgba(157, 157, 157, 0.3);
+}
+.item-content {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.read {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.read:hover {
+  color: #bfba55
+}
+.mask {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 100000;
+}
+#detail {
+  position: fixed;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1000000;
+  border-radius: 10px;
+}
+#detail h3 {
+  text-align: center;
+  margin-top: 0 !important;
+}
+#detail p {
+  text-indent: 2em;
+}
+#modalWrapper {
+  display: none;
+}
+#detailContent {
+  position: relative;
+}
+i {
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div id="modalWrapper">
+  <div class="mask"></div>
+  <div id="detail">
+    <div id="detailContent"></div>
+  </div>
+</div>
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="./index.html" class="navbar-brand" style="height: 40px; line-height: 40px">卢&nbsp;宅</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="./1.html">雅溪卢氏<br/>源远流长</a></li>
+                  <li><a href="./2.html">名门宅第<br/>气势恢弘</a></li>
+                  <li><a href="./3.html">科第世家<br/>婺之望族</a></li>
+                  <li><a href="./4.html">诗礼传家<br/>人文荟萃</a></li>
+                  <li><a href="./5.html">镂金溢彩<br/>匾联流芳</a></li>
+                  <li class="active"><a href="./6.html">民间故事<br/>世代流传</a></li>
+               </ul>
+          </div>
+     </div>
+</div>
+<section id="home" class="main-6 parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12 col-sm-12">
+                    <h1 class="rollIn animated">民间故事 世代流传</h1>
+                    <h4 style="font-weight: bold" class="typed"></h4>
+               </div>
+          </div>
+     </div>
+</section>
+<section id="about" class="page1">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                 <div class="col-md-6 col-sm-12">
+                    <div class="item">
+                      <img src="./images/11.jpg" class="img-responsive" alt="image" style="max-width: 100%; padding: 0 !important">
+                      <div class="item-content">
+                        <h3>卢员甫始迁雅溪</h3>
+                        <p>南宋初年，卢寔一支由天台迁东阳，落脚于西岘峰山脚下巧溪（今白云陶村一带）。</p>
+                        <p>卢窆四代孙卢员甫，从小熟读经史，爱好天文地理，且为人厚道，心
+                            地善良，深受族人尊敬。一日，朝阳初露，春光明媚，卢员甫正于巧溪河
+                            畔漫步吟诗，突然间，一群喜鹊从身旁绿树丛中欢叫而起，绕身三匝，旋
+                            即飞往村东松树林中······</p>
+                        <div class="read" index="0">阅&nbsp;读</div>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="col-md-6 col-sm-12">
+                   <div class="item">
+                     <img src="./images/18.jpg" class="img-responsive" alt="image" style="max-width: 100%; padding: 0 !important">
+                     <div class="item-content">
+                        <h3>滕宅街</h3>
+                        <p>北宋年间，东阳县城东门外为滕宅。滕家曾是当地势倾一方的名门望族。
+                            滕元发、滕茂实为朝中要员，其子也相继在京城做官。滕宅有条街，街道路
+                            面为灰黑色的鹅卵石铺就，滕宅街屋宇新颖整齐，街面美观整洁，行人无不
+                            驻足观赏。</p>
+                        <p>滕元发告老还乡回到滕宅后，当地县令，出干对滕老的敬重，四时八节
+                            无不供奉拜望······</p>
+                        <div class="read" index="1">阅&nbsp;读</div>
+                     </div>
+                   </div>
+                  </div>
+                    <!-- <div class="col-md-12 col-sm-12 item">
+                         <h3>卢员甫始迁雅溪</h3>
+                         <p>南宋初年，卢寔一支由天台迁东阳，落脚于西岘峰山脚下巧溪（今白云陶村一带）。</p>
+                         <p>卢窆四代孙卢员甫，从小熟读经史，爱好天文地理，且为人厚道，心
+                            地善良，深受族人尊敬。一日，朝阳初露，春光明媚，卢员甫正于巧溪河
+                            畔漫步吟诗，突然间，一群喜鹊从身旁绿树丛中欢叫而起，绕身三匝，旋
+                            即飞往村东松树林中。卢员甫好生惊奇，不由自主地追踪而去。所奇的是，
+                            鹊停人追，人到鹊飞，顷刻间竟向东追出七八里，直至东岘峰山脚下。卢
+                            员甫环视四周，只觉得此地山清水秀、气象万千：南峙三峰，形似笔架；
+                            东西两河，分流环抱，十几口野水塘宛如一串珍珠，一片空旷山坡草绿树
+                            茂，不禁暗自窃喜：“此乃风水宝地，莫非神鹊指引”。此时，喜鹊喳喳跃
+                            起，又在卢员甫头顶盘绕三周，然后散去。望着远去的喜鹊，卢员甫心中
+                            却好生懊恼，因为这一风水宝地已有何氏、许氏、滕氏在此繁衍生息，卢
+                            氏要迁居雅溪，显然只是一种奢求。卢员甫闷闷不乐，当即回到家中合家
+                            商议，最后决定退而求其次，由巧溪迁雅溪东北隅“下韩原”（巡检山、覆
+                            船山一带）居住。直至元末，卢氏才辗转西迁至雅溪之畔，“雅溪卢氏”从
+                            此螽斯繁衍。</p>
+                         <p>卢员甫因此被尊为雅溪卢氏始迁袓。</p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 item">
+                          <h3>滕宅街</h3>
+                          <p>北宋年间，东阳县城东门外为滕宅。滕家曾是当地势倾一方的名门望族。
+                              滕元发、滕茂实为朝中要员，其子也相继在京城做官。滕宅有条街，街道路
+                              面为灰黑色的鹅卵石铺就，滕宅街屋宇新颖整齐，街面美观整洁，行人无不
+                              驻足观赏。</p>
+                          <p>滕元发告老还乡回到滕宅后，当地县令，出干对滕老的敬重，四时八节
+                              无不供奉拜望。年长日久，虽然仍有阿谀奉迎者乐此不疲，但心怀不满者同
+                              样大有人在，只是奈何不得。</p>
+                          <p>某年，东阳来了一位姓毛的县令。此人上任不久，即实施街道整治，从
+                              县衙门口，直至东街、滕宅街、卢宅街的通道，两边用鹅卵石铺路，道路中
+                              间全部用白石板铺心。整修后的道路整洁、美观、便利，得到百姓黎民的普
+                              遍赞扬。可这一来，事情却犯怪了，在京做官的滕氏头上的帽子反向戴了，身
+                              上的官服反面穿了，连鞋子也调个向了，好比是“乌龙翻白”了。从此，滕
+                              氏家族日渐衰败，滕氏族人逐步外迁，原来的滕宅街，后来变为陈宅街，成
+                              为卢氏居住的地方了。</p>
+                          <p>后来人们相传，毛氏县令深谙堪舆学，一日途径滕宅时发现，用黑石铺
+                              就的滕宅街犹如一条“乌龙”。“乌龙露骨，飞黄腾达”，“脚踩乌龙，滕宅兴
+                              隆”，所以滕氏兴旺发达。因毛氏县令不满滕氏豪强，故略施小计，以整治街
+                              道为名，将“乌龙”翻白，结果破坏了滕宅风水。</p>
+                    </div> -->
+                    <!-- <div class="clearfix"></div> -->
+                    <!-- <div class="col-md-4 col-sm-4">
+                         <img src="images/about-image1.jpg" class="img-responsive" alt="Blog Image">
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                         <img src="images/about-image2.jpg" class="img-responsive" alt="Blog Image">
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                         <img src="images/about-image3.jpg" class="img-responsive" alt="Blog Image">
+                    </div> -->
+               </div>
+          </div>
+     </div>
+</section>
+<footer style="">
+    <div class="footer-content" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-image: url('./images/5.jpg')"></div>
+    <div class="mask" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.6; z-index: 99"></div>
+    <div style="position: absolute; width: 100%; color: #fff; font-size: 20px; font-weight: bold; z-index: 999; text-align: center">Copyright. All rights reserved.</div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top" style="z-index: 10000"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.parallax.js"></script>
+<script src="./js/custom.js"></script>
+<script src="./js/typed.js"></script>
+<script>
+   $(function(){
+     $('.typed').typed({
+          strings: ["在雅溪卢氏的发展历史中，卢氏族人中的名彦硕儒，乡里贤达有过许多轶事趣闻。"],
+          typeSpeed: 100
+     });
+   })
+   var arr = [
+     "<i class='fa fa-times fa-2x' style='position: absolute; right: 10px; top: 5px;'></i><h3>卢员甫始迁雅溪</h3><p>南宋初年，卢寔一支由天台迁东阳，落脚于西岘峰山脚下巧溪（今白云陶村一带）。</p><p>卢窆四代孙卢员甫，从小熟读经史，爱好天文地理，且为人厚道，心地善良，深受族人尊敬。一日，朝阳初露，春光明媚，卢员甫正于巧溪河畔漫步吟诗，突然间，一群喜鹊从身旁绿树丛中欢叫而起，绕身三匝，旋即飞往村东松树林中。卢员甫好生惊奇，不由自主地追踪而去。所奇的是，鹊停人追，人到鹊飞，顷刻间竟向东追出七八里，直至东岘峰山脚下。卢员甫环视四周，只觉得此地山清水秀、气象万千：南峙三峰，形似笔架；东西两河，分流环抱，十几口野水塘宛如一串珍珠，一片空旷山坡草绿树茂，不禁暗自窃喜：“此乃风水宝地，莫非神鹊指引”。此时，喜鹊喳喳跃起，又在卢员甫头顶盘绕三周，然后散去。望着远去的喜鹊，卢员甫心中却好生懊恼，因为这一风水宝地已有何氏、许氏、滕氏在此繁衍生息，卢氏要迁居雅溪，显然只是一种奢求。卢员甫闷闷不乐，当即回到家中合家商议，最后决定退而求其次，由巧溪迁雅溪东北隅“下韩原”（巡检山、覆船山一带）居住。直至元末，卢氏才辗转西迁至雅溪之畔，“雅溪卢氏”从此螽斯繁衍。</p><p>卢员甫因此被尊为雅溪卢氏始迁袓。</p>",
+     "<i class='fa fa-times fa-2x' style='position: absolute; right: 10px; top: 5px;'></i><h3>滕宅街</h3><p>北宋年间，东阳县城东门外为滕宅。滕家曾是当地势倾一方的名门望族。滕元发、滕茂实为朝中要员，其子也相继在京城做官。滕宅有条街，街道路面为灰黑色的鹅卵石铺就，滕宅街屋宇新颖整齐，街面美观整洁，行人无不驻足观赏。</p><p>滕元发告老还乡回到滕宅后，当地县令，出干对滕老的敬重，四时八节无不供奉拜望。年长日久，虽然仍有阿谀奉迎者乐此不疲，但心怀不满者同样大有人在，只是奈何不得。</p><p>某年，东阳来了一位姓毛的县令。此人上任不久，即实施街道整治，从县衙门口，直至东街、滕宅街、卢宅街的通道，两边用鹅卵石铺路，道路中间全部用白石板铺心。整修后的道路整洁、美观、便利，得到百姓黎民的普遍赞扬。可这一来，事情却犯怪了，在京做官的滕氏头上的帽子反向戴了，身上的官服反面穿了，连鞋子也调个向了，好比是“乌龙翻白”了。从此，滕氏家族日渐衰败，滕氏族人逐步外迁，原来的滕宅街，后来变为陈宅街，成为卢氏居住的地方了。</p><p>后来人们相传，毛氏县令深谙堪舆学，一日途径滕宅时发现，用黑石铺就的滕宅街犹如一条“乌龙”。“乌龙露骨，飞黄腾达”，“脚踩乌龙，滕宅兴隆”，所以滕氏兴旺发达。因毛氏县令不满滕氏豪强，故略施小计，以整治街道为名，将“乌龙”翻白，结果破坏了滕宅风水。</p>"
+   ];
+   var detailContent = $("#detailContent");
+   var modalWrapper = $("#modalWrapper");
+   $(".read").click(function(e) {
+      let index = e.target.attributes.getNamedItem("index").value;
+      detailContent.html(arr[index]);
+      modalWrapper.css("display", "block");
+      $("i").click(function(e) {
+        modalWrapper.css("display", "none");
+      });
+   });
+</script>
+</body>
+</html>

@@ -11,7 +11,41 @@
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/font-awesome.min.css">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/animate.css">
 <!-- <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet"> -->
+<style>
+.img-groups {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+.img-wrapper {
+     overflow: hidden;
+     margin: 5px !important;
+     padding: 0 !important;
+     height: 160px !important;
+     width: 240px !important;
+}
+.img {
+     padding: 0 !important;
+     height: 160px !important;
+     width: 240px !important;
+     transition: 1s all;
+     transform: scale(1);
+     filter: grayscale(100%);
+}
+.img:hover {
+     transition: 1s all;
+     transform: scale(1.2);
+     background: black;
+     filter: grayscale(0);
+}
+@media screen and (max-width: 600px) {
+     .img-wrapper {
+          justify-content: center;
+     }
+}
+</style>
 </head>
 <body>
 <div class="preloader">
@@ -35,19 +69,19 @@
                   <li><a href="./2.html">名门宅第<br/>气势恢弘</a></li>
                   <li><a href="./3.html">科第世家<br/>婺之望族</a></li>
                   <li><a href="./4.html">诗礼传家<br/>人文荟萃</a></li>
-                  <li><a href="./gallery.html">镂金溢彩<br/>匾联流芳</a></li>
-                  <li><a href="./contact.html">民间故事<br/>世代流传</a></li>
+                  <li><a href="./5.html">镂金溢彩<br/>匾联流芳</a></li>
+                  <li><a href="./6.html">民间故事<br/>世代流传</a></li>
                </ul>
           </div>
   </div>
 </div>
-<section id="home" class="main-about parallax-section">
+<section id="home" class="main-1 parallax-section">
      <div class="overlay"></div>
      <div class="container">
           <div class="row">
                <div class="col-md-12 col-sm-12">
-                    <h1>雅溪卢氏 源远流长</h1>
-                    <h4 style="font-weight: bold">卢氏聚族而居八百年来，有序传衍，历久俞繁，徙远弥亲，几度辉煌，人才鼎盛，历久不衰。</h4>
+                    <h1 class="bounceIn animated">雅溪卢氏 源远流长</h1>
+                    <h4 class="typed" style="font-weight: bold"></h4>
                </div>
           </div>
      </div>
@@ -80,64 +114,39 @@
                               <p>尧仲洪懋 光士人永树 炳正念淳秀 熙嘉钟汉东 烈世钧鸿本 焕玉铭泰松</p>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="col-md-4 col-sm-4">
-                         <img src="images/about-image1.jpg" class="img-responsive" alt="Blog Image">
+                    <div class="img-groups">
+                    <div class="img-wrapper">
+                         <img src="./images/0.jpg" class="img-responsive img" alt="Blog Image">
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                         <img src="images/about-image2.jpg" class="img-responsive" alt="Blog Image">
+                    <div class="img-wrapper">
+                         <img src="./images/2.jpg" class="img-responsive img" alt="Blog Image">
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                         <img src="images/about-image3.jpg" class="img-responsive" alt="Blog Image">
+                    <div class="img-wrapper">
+                         <img src="./images/4.jpg" class="img-responsive img" alt="Blog Image">
+                    </div>
                     </div>
                </div>
           </div>
      </div>
 </section>
 <footer>
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-5 col-md-offset-1 col-sm-6">
-                    <h3>Neuron Studio</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                    <div class="footer-copyright">
-                         <p>Copyright &copy; 2017 Your Company - Design: Tooplate.  More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-                    </div>
-               </div>
-
-               <div class="col-md-4 col-md-offset-1 col-sm-6">
-                    <h3>Talk to us</h3>
-                    <p><i class="fa fa-globe"></i> 512 Delicious Street, San Francisco, CA 10880</p>
-                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
-                    <p><i class="fa fa-save"></i> info@company.com</p>
-               </div>
-
-               <div class="clearfix col-md-12 col-sm-12">
-                    <hr>
-               </div>
-
-               <div class="col-md-12 col-sm-12">
-                    <ul class="social-icon">
-                         <li><a href="#" class="fa fa-facebook"></a></li>
-                         <li><a href="#" class="fa fa-twitter"></a></li>
-                         <li><a href="#" class="fa fa-google-plus"></a></li>
-                         <li><a href="#" class="fa fa-dribbble"></a></li>
-                         <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-               </div>
-          </div>
-     </div>
+     <div class="footer-content" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-image: url('./images/5.jpg')"></div>
+     <div class="mask" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.6; z-index: 99"></div>
+     <div style="position: absolute; width: 100%; color: #fff; font-size: 20px; font-weight: bold; z-index: 999; text-align: center">Copyright. All rights reserved.</div>
 </footer>
-
-<!-- Back top -->
-<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
-
-<!-- SCRIPTS -->
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/custom.js"></script>
-
+<a href="#back-top" class="go-top" style="z-index: 10000"><i class="fa fa-angle-up"></i></a>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.parallax.js"></script>
+<script src="./js/custom.js"></script>
+<script src="./js/typed.js"></script>
+<script>
+   $(function(){
+     $('.typed').typed({
+          strings: ["卢氏聚族而居八百年来，有序传衍，历久俞繁，徙远弥亲，几度辉煌，人才鼎盛，历久不衰。"],
+          typeSpeed: 100
+     });
+   })
+</script>
 </body>
 </html>
