@@ -1,3 +1,9 @@
+.nav a {
+  font-weight: bold;
+}
+.container h4 {
+  font-size: 18px;
+}
 body {
 	background: #ffffff;
   font-family: 'Lora', serif;
