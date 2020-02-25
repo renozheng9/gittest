@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>卢宅</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/tiltedpage-scroll.css">
+<link rel="stylesheet" href="./css/animate.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet"> -->
+<style>
+  .photos-container {
+    width: 100%;
+    height: 600px;
+    margin-top: 70px;
+    background-color: #ddd;
+    position: relative;
+    overflow: hidden;
+  }
+  .photo-item {
+    padding: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s linear;
+  }
+  .photo-item img {
+    width: 340px;
+  }
+  .choose-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .choose-item {
+    margin: 0 10px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #aaa;
+  }
+  .choose-item-active {
+    background-color: #888;
+    width: 22px;
+    height: 22px;
+  }
+  .mask {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.7;
+    display: none;
+    z-index: 1100;
+  }
+</style>
+</head>
+<body>
+<div class="mask"></div>
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="./index.html" class="navbar-brand">盧&nbsp;宅</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="./1.html">雅溪卢氏<br/>源远流长</a></li>
+                  <li><a href="./2.html">名门宅第<br/>气势恢弘</a></li>
+                  <li><a href="./3.html">科第世家<br/>婺之望族</a></li>
+                  <li><a href="./4.html">诗礼传家<br/>人文荟萃</a></li>
+                  <li><a href="./5.html">镂金溢彩<br/>匾联流芳</a></li>
+                  <li><a href="./6.html">民间故事<br/>世代流传</a></li>
+                  <li class="active"><a href="./7.html">我与卢宅</a></li>
+               </ul>
+          </div>
+     </div>
+</div>
+<!-- <section id="home" class="main-6 parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12 col-sm-12">
+                    <h1 class="rollIn animated">民间故事 世代流传</h1>
+                    <h4 style="font-weight: bold" class="typed"></h4>
+               </div>
+          </div>
+     </div>
+</section> -->
+<div class="photos-container">
+  <div class="choose-container">
+    <div class="choose-item" data-index="0"></div>
+    <div class="choose-item" data-index="1"></div>
+    <div class="choose-item" data-index="2"></div>
+    <div class="choose-item" data-index="3"></div>
+    <div class="choose-item" data-index="4"></div>
+    <div class="choose-item" data-index="5"></div>
+    <div class="choose-item" data-index="6"></div>
+    <div class="choose-item" data-index="7"></div>
+    <div class="choose-item" data-index="8"></div>
+  </div>
+  <figure class="photo-item" data-index="0"><img src="./images/photo1.jpg" ></figure>
+  <figure class="photo-item" data-index="1"><img src="./images/photo2.jpg" ></figure>
+  <figure class="photo-item" data-index="2"><img src="./images/photo3.jpg" ></figure>
+  <figure class="photo-item" data-index="3"><img src="./images/photo4.jpg" ></figure>
+  <figure class="photo-item" data-index="4"><img src="./images/photo5.jpg" ></figure>
+  <figure class="photo-item" data-index="5"><img src="./images/photo6.jpg" ></figure>
+  <figure class="photo-item" data-index="6"><img src="./images/photo7.jpg" ></figure>
+  <figure class="photo-item" data-index="7"><img src="./images/photo8.jpg" ></figure>
+  <figure class="photo-item" data-index="8"><img src="./images/photo9.jpg" ></figure>
+</div>
+<section id="about" class="page1">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12 col-sm-12">
+                <p>作者卢彦冰，系东阳卢宅雅溪卢氏第31世孙（女）。雅溪卢氏自南宋中叶定居卢宅，繁衍生息，迄今已有800余年历史。明清时期，该氏族重教兴学，立德树人，诗礼传家，人才辈出，赫然成为科第世家，婺之望族。这里不仅留存了气势恢弘的历史建筑，更饱含着深厚的文化底蕴，是东阳教育、建筑和工艺美术“三乡文化”的代表作，是弥足珍贵的历史瑰宝。作者生于斯长于斯，从小受到浓郁的传统文化的熏陶，从而对博大精深的卢宅文化有着深刻的认识和理解。</p>
+               </div>
+          </div>
+     </div>
+</section>
+<footer style="">
+    <div class="footer-content" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-image: url('./images/5.jpg')"></div>
+    <div class="mask" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.6; z-index: 99"></div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top" style="z-index: 10000"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.parallax.js"></script>
+<script src="./js/custom.js"></script>
+<script src="./js/typed.js"></script>
+<script>
+  var photos = $('.photo-item');
+  var choose = $('.choose-item');
+  var mask = $('.mask');
+  var index = 0;
+  var isScale = false;
+  var clientWidth = document.body.clientWidth;
+  var width = clientWidth - 100;
+  var randomX = 0;
+  var randomY = 0;
+  $(document).ready(function () {
+    upset(index);
+  });
+  choose.click(function (e) {
+    index = e.target.getAttribute('data-index');
+    upset(index);
+  });
+  photos.click(function (e) {
+    if (index == e.currentTarget.getAttribute('data-index')) {
+      mask.css('display', 'block');
+      photos.eq(index).css('transform', 'translate(-50%, -50%) scale(1.2)');
+    } else {
+      return;
+    }
+  });
+  mask.click(function () {
+    mask.css('display', 'none');
+    photos.eq(index).css('transform', 'translate(-50%, -50%)');
+  });
+  function upset(index) {
+    for (let i = 0; i < 9; i++) {
+      if (i == index) {
+        choose.eq(i).addClass('choose-item-active');
+        photos.eq(i).css('transform', 'translate(-50%, -50%) rotate(0deg)');
+        photos.eq(i).css('z-index', 1200);
+      } else {
+        randomX = (Math.random() - 0.5) * clientWidth - 100;
+        randomY = (Math.random() - 0.5) * 600;
+        randomDeg = (Math.random() - 0.5) * 360;
+        randomZindex = Math.floor((Math.random() * 500));
+        choose.eq(i).removeClass('choose-item-active');
+        photos.eq(i).css('transform', 'translate(' + randomX + 'px, ' + randomY + 'px) ' + 'rotate(' + randomDeg + 'deg)');
+        photos.eq(i).css('z-index', randomZindex);
+      }
+    }
+  }
+</script>
+</body>
+</html>
